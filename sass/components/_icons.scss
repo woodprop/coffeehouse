@@ -1,0 +1,10 @@
+.icon {
+  display: inline-block;
+
+
+  &_coffee {
+    width: 20px;
+    height: 20px;
+    background: url("../../images/icons/coffee-cup.svg");
+  }
+}

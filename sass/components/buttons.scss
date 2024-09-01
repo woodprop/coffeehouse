@@ -1,0 +1,19 @@
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &_default {
+    width: 200px;
+    height: 64px;
+    border-radius: 32px;
+  }
+  &_colored {
+
+    background: $color-text-light;
+  }
+
+  &_link {
+
+  }
+}

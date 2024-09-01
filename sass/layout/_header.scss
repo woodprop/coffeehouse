@@ -1,0 +1,23 @@
+.header {
+  height: 60px;
+  margin: 20px 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__navigation {
+    margin-top: -7px;
+  }
+
+}
+
+.header__button {
+  margin-top: -7px;
+  & span {
+    margin-left: 9px;
+    margin-bottom: -2px;
+  }
+}
