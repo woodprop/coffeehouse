@@ -2,11 +2,19 @@
 @include normalize();
 
 @import "abstract/variables";
+@import "abstract/mixins";
+
 @import "base/fonts";
 @import "base/base";
-@import "layout/wrapper";
-@import "layout/header";
-@import "layout/promo";
+@import "base/typography";
+
 @import "components/icons";
 @import "components/navigation";
 @import "components/buttons";
+@import "components/slider";
+
+@import "layout/wrapper";
+@import "layout/header";
+@import "layout/promo";
+@import "layout/favorite";
+@import "layout/about";

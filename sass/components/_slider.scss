@@ -1,0 +1,74 @@
+.slider {
+  margin-top: 45px;
+}
+
+.slider__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider__button {
+  position: relative;
+  top: 44px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 1px solid $color-text-dark;
+  background: url("../images/arrow.png") center center no-repeat;
+  cursor: pointer;
+
+  &_left {
+    left: 4px;
+  }
+  &_right {
+    right: 4px;
+    transform: rotate(180deg);
+  }
+}
+
+.slider__progress {
+  margin: 40px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.progress-dash {
+  width: 40px;
+  height: 4px;
+  background: $color-border-light;
+  border-radius: 2px;
+  &_active {
+    background: $color-border-dark;
+  }
+}
+
+
+.slide {
+  width: 480px;
+  text-align: center;
+}
+
+.slide__image {
+  display: block;
+  margin: 0 auto;
+  height: 480px;
+}
+
+.slide__title {
+  margin-top: 16px;
+  @include font($size: 2.4rem);
+  line-height: 3rem;
+}
+
+.slide__text {
+  margin-top: 16px;
+  line-height: 150%;
+}
+
+.slide__price {
+  margin-top: 16px;
+  @include font($size: 2.4rem);
+}
