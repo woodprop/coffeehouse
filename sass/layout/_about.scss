@@ -4,3 +4,33 @@
     margin-top: 100px;
   }
 }
+
+.about__images {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  height: 1060px;
+}
+
+.about__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 660px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  &_big {
+    height: 590px;
+  }
+  &_small {
+    height: 430px;
+  }
+
+  & img {
+    width: 726px;
+  }
+}
