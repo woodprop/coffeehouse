@@ -406,6 +406,9 @@ h1 {
 .button_colored {
   background: #e1d4c9;
 }
+.button_outline {
+  border: 1px solid #665f55;
+}
 .slider {
   margin-top: 45px;
 }
@@ -575,6 +578,65 @@ h1 {
 }
 .about__img img {
   width: 726px;
+}
+
+.mobile-app__wrapper {
+  margin-top: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.mobile-app__content {
+  max-width: 630px;
+}
+
+.mobile-app__title {
+  margin-top: 145px;
+}
+
+.mobile-app__text {
+  margin-top: 40px;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.mobile-app__buttons {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  column-gap: 20px;
+}
+
+.mobile-app__button {
+  padding-left: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+}
+.mobile-app__button .store-button-text {
+  padding-left: 15px;
+}
+.mobile-app__button .store-button-text__subtitle {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+  margin-bottom: 6px;
+}
+
+.mobile-app__icon {
+  display: block;
+  height: 32px;
+}
+.mobile-app__icon_apple {
+  width: 26px;
+  background: url("../images/icons/icon-apple.svg") no-repeat;
+}
+.mobile-app__icon_google {
+  width: 32px;
+  background: url("../images/icons/icon-google.svg") no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */
