@@ -374,7 +374,36 @@ h1 {
 .icon_coffee {
   width: 20px;
   height: 20px;
-  background: url("../../images/icons/coffee-cup.svg");
+  background: url("../../images/icons/coffee-cup.svg") no-repeat center center;
+}
+.icon_twitter {
+  background: url("../../images/icons/twitter.svg") no-repeat center center;
+}
+.icon_instagram {
+  background: url("../../images/icons/instagram.svg") no-repeat center center;
+}
+.icon_facebook {
+  background: url("../../images/icons/facebook.svg") no-repeat center center;
+}
+.icon_map {
+  background: url("../../images/icons/pin-alt.svg") no-repeat center center;
+}
+.icon_tel {
+  background: url("../../images/icons/phone.svg") no-repeat center center;
+}
+.icon_time {
+  background: url("../../images/icons/clock.png") no-repeat center center;
+}
+
+.icon_social {
+  width: 24px;
+  height: 24px;
+}
+
+.icon_contact {
+  margin-right: 9px;
+  width: 20px;
+  height: 20px;
 }
 
 .navigation {
@@ -599,6 +628,7 @@ h1 {
   margin-top: 40px;
   line-height: 150%;
   font-weight: 400;
+  letter-spacing: 0.1px;
 }
 
 .mobile-app__buttons {
@@ -637,6 +667,64 @@ h1 {
 .mobile-app__icon_google {
   width: 32px;
   background: url("../images/icons/icon-google.svg") no-repeat;
+}
+
+.footer__wrapper {
+  margin-top: 98px;
+  padding: 100px;
+  width: 1360px;
+  height: 450px;
+  border-radius: 40px;
+  background: #665f55;
+  display: flex;
+}
+
+.footer__content {
+  width: 50%;
+}
+
+.footer__title {
+  color: #e1d4c9;
+}
+
+.footer__social {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  column-gap: 12px;
+}
+
+.footer__button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #c1b6ad;
+}
+
+.footer__contact {
+  margin-top: 32px;
+  margin-left: 50px;
+  color: #e1d4c9;
+}
+
+.contact__title {
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+}
+
+.contact__item {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1px;
+}
+.contact__item a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

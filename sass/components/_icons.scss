@@ -5,6 +5,41 @@
   &_coffee {
     width: 20px;
     height: 20px;
-    background: url("../../images/icons/coffee-cup.svg");
+    background: url("../../images/icons/coffee-cup.svg") no-repeat center center;
   }
+
+  &_twitter {
+    background: url("../../images/icons/twitter.svg") no-repeat center center;
+  }
+
+  &_instagram {
+    background: url("../../images/icons/instagram.svg") no-repeat center center;
+  }
+
+  &_facebook {
+    background: url("../../images/icons/facebook.svg") no-repeat center center;
+  }
+
+  &_map {
+    background: url("../../images/icons/pin-alt.svg") no-repeat center center;
+  }
+
+  &_tel {
+    background: url("../../images/icons/phone.svg") no-repeat center center;
+  }
+
+  &_time {
+    background: url("../../images/icons/clock.png") no-repeat center center;
+  }
+}
+
+.icon_social {
+  width: 24px;
+  height: 24px;
+}
+
+.icon_contact {
+  margin-right: 9px;
+  width: 20px;
+  height: 20px;
 }
