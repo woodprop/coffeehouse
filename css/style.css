@@ -542,6 +542,46 @@ h1 {
   font-weight: 600;
 }
 
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab {
+  height: 46px;
+  width: fit-content;
+  padding: 0 16px 0 8px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #c1b6ad;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: #c1b6ad;
+}
+
+.tab__text {
+  margin-left: 8px;
+}
+
+.tab_active, .tab:hover {
+  color: #e1d4c9;
+  background: #665f55;
+}
+.tab_active .tab__icon, .tab:hover .tab__icon {
+  background: #e1d4c9;
+}
+
 .wrapper {
   max-width: 1360px;
   margin: 0 auto;
@@ -562,7 +602,9 @@ h1 {
 
 .header__button {
   position: relative;
-  margin-top: -7px;
+  color: inherit;
+  text-decoration: none;
+  margin-top: -5px;
 }
 .header__button span {
   margin-left: 9px;
@@ -810,6 +852,17 @@ h1 {
 }
 .contact__item_not-interactive:hover::after {
   content: none;
+}
+
+.menu__title {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.menu__tabs {
+  margin-top: 40px;
+  gap: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

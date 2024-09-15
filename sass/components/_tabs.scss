@@ -1,0 +1,41 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab {
+  height: 46px;
+  width: fit-content;
+  padding: 0 16px 0 8px;
+  display: flex;
+  align-items: center;
+  border: 1px solid $color-border-light;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: $color-border-light;
+}
+
+.tab__text {
+  margin-left: 8px;
+}
+
+.tab_active, .tab:hover {
+  color: $color-text-light;
+  background: $color-bg-container;
+
+  & .tab__icon {
+    background: $color-text-light;
+  }
+}
+

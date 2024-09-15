@@ -13,11 +13,15 @@
 @import "components/navigation";
 @import "components/buttons";
 @import "components/slider";
+@import "components/tabs";
 
 @import "layout/wrapper";
 @import "layout/header";
-@import "layout/promo";
-@import "layout/favorite";
-@import "layout/about";
-@import "layout/mobile-app";
+@import "layout/main/promo";
+@import "layout/main/favorite";
+@import "layout/main/about";
+@import "layout/main/mobile-app";
 @import "layout/footer";
+
+
+@import "layout/menu/menu";

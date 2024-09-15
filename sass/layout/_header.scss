@@ -16,8 +16,10 @@
 
 .header__button {
   position: relative;
+  color: inherit;
+  text-decoration: none;
   @extend %link-underscore;
-  margin-top: -7px;
+  margin-top: -5px;
   & span {
     margin-left: 9px;
     margin-bottom: -2px;
