@@ -2,6 +2,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &_default {
     width: 200px;
@@ -15,6 +16,10 @@
 
   &_outline {
     border: 1px solid $color-border-dark;
+    &:hover {
+      background: $color-bg-container;
+      color: $color-text-light;
+    }
   }
 
   &_link {

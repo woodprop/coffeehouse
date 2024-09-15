@@ -15,8 +15,9 @@
   height: 60px;
   border-radius: 100%;
   border: 1px solid $color-text-dark;
-  background: url("../images/arrow.png") center center no-repeat;
+  background: url("../images/icons/arrow.png") center center no-repeat;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &_left {
     left: 4px;
@@ -24,6 +25,11 @@
   &_right {
     right: 4px;
     transform: rotate(180deg);
+  }
+
+  &:hover {
+    background-color: $color-bg-container;
+    background-image: url("../images/icons/arrow-hover.png");
   }
 }
 

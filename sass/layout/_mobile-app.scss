@@ -32,32 +32,42 @@
 }
 
 .mobile-app__button {
-  padding-left: 23px;
+  padding-left: 19px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   text-align: left;
 
   & .store-button-text {
-    padding-left: 15px;
+    padding-left: 9px;
     &__subtitle {
       @include font($size: 10px);
       line-height: 140%;
       margin-bottom: 6px;
     }
   }
+
+  &:hover {
+    & .mobile-app__icon {
+      &_apple {
+        background: url("../images/icons/icon-apple-hover.svg") no-repeat;
+      }
+      &_google {
+        background: url("../images/icons/icon-google-hover.svg") no-repeat;
+      }
+    }
+  }
 }
 
 .mobile-app__icon {
   display: block;
-
-  height: 32px;
+  width: 36px;
+  height: 36px;
+  transition: all 0.3s ease;
   &_apple {
-    width: 26px;
     background: url("../images/icons/icon-apple.svg") no-repeat;
   }
   &_google {
-    width: 32px;
     background: url("../images/icons/icon-google.svg") no-repeat;
   }
 }

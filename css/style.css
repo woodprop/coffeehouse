@@ -324,6 +324,21 @@ template {
   display: none;
 }
 
+.contact__item::after, .header__button::after, .navigation__item::after {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #403f3d;
+  transition: all 0.5s ease;
+}
+.contact__item:hover::after, .header__button:hover::after, .navigation__item:hover::after {
+  opacity: 1;
+}
+
 @font-face {
   font-family: Inter;
   src: url("/fonts/Inter-VariableFont.ttf");
@@ -398,6 +413,7 @@ h1 {
 .icon_social {
   width: 24px;
   height: 24px;
+  transition: all 0.3s ease;
 }
 
 .icon_contact {
@@ -410,22 +426,25 @@ h1 {
   padding: 0;
   font-weight: 600;
 }
+.navigation__link {
+  color: inherit;
+  text-decoration: none;
+}
+
 .navigation__item {
+  position: relative;
   display: inline-block;
   margin-left: 38px;
 }
 .navigation__item:first-child {
   margin-left: 0;
 }
-.navigation__link {
-  color: inherit;
-  text-decoration: none;
-}
 
 .button {
   background: none;
   border: none;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .button_default {
   width: 200px;
@@ -437,6 +456,10 @@ h1 {
 }
 .button_outline {
   border: 1px solid #665f55;
+}
+.button_outline:hover {
+  background: #665f55;
+  color: #e1d4c9;
 }
 .slider {
   margin-top: 45px;
@@ -455,8 +478,9 @@ h1 {
   height: 60px;
   border-radius: 100%;
   border: 1px solid #403f3d;
-  background: url("../images/arrow.png") center center no-repeat;
+  background: url("../images/icons/arrow.png") center center no-repeat;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .slider__button_left {
   left: 4px;
@@ -464,6 +488,10 @@ h1 {
 .slider__button_right {
   right: 4px;
   transform: rotate(180deg);
+}
+.slider__button:hover {
+  background-color: #665f55;
+  background-image: url("../images/icons/arrow-hover.png");
 }
 
 .slider__progress {
@@ -532,6 +560,7 @@ h1 {
 }
 
 .header__button {
+  position: relative;
   margin-top: -7px;
 }
 .header__button span {
@@ -547,8 +576,9 @@ h1 {
   height: 644px;
   padding: 100px;
   border-radius: 40px;
-  background: url("/images/promo.jpg") no-repeat;
+  background: url("../images/promo.jpg") no-repeat;
   background-size: cover;
+  background-position: bottom -31px left 0px;
 }
 
 .promo__content {
@@ -567,6 +597,26 @@ h1 {
   margin-bottom: 40px;
   font-weight: 400;
   line-height: 2.4rem;
+}
+
+.promo__button .icon {
+  opacity: 0;
+  transition: all 0.4s ease;
+  transition-delay: 0.1s;
+}
+.promo__button:hover .icon {
+  opacity: 1;
+  transform: translateX(8px);
+}
+.promo__button .menu-button__text {
+  position: relative;
+  left: 10px;
+  top: -2px;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+.promo__button:hover .menu-button__text {
+  transform: translateX(-10px);
 }
 
 .favorite__wrapper {
@@ -607,6 +657,10 @@ h1 {
 }
 .about__img img {
   width: 726px;
+  transition: all 0.3s ease;
+}
+.about__img:hover img {
+  transform: scale(0.92);
 }
 
 .mobile-app__wrapper {
@@ -640,14 +694,14 @@ h1 {
 }
 
 .mobile-app__button {
-  padding-left: 23px;
+  padding-left: 19px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   text-align: left;
 }
 .mobile-app__button .store-button-text {
-  padding-left: 15px;
+  padding-left: 9px;
 }
 .mobile-app__button .store-button-text__subtitle {
   font-size: 10px;
@@ -655,17 +709,23 @@ h1 {
   line-height: 140%;
   margin-bottom: 6px;
 }
+.mobile-app__button:hover .mobile-app__icon_apple {
+  background: url("../images/icons/icon-apple-hover.svg") no-repeat;
+}
+.mobile-app__button:hover .mobile-app__icon_google {
+  background: url("../images/icons/icon-google-hover.svg") no-repeat;
+}
 
 .mobile-app__icon {
   display: block;
-  height: 32px;
+  width: 36px;
+  height: 36px;
+  transition: all 0.3s ease;
 }
 .mobile-app__icon_apple {
-  width: 26px;
   background: url("../images/icons/icon-apple.svg") no-repeat;
 }
 .mobile-app__icon_google {
-  width: 32px;
   background: url("../images/icons/icon-google.svg") no-repeat;
 }
 
@@ -699,7 +759,23 @@ h1 {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #c1b6ad;
+}
+.footer__button:hover {
+  background: #e1d4c9;
+  border-color: #e1d4c9;
+}
+.footer__button:hover .icon_twitter {
+  background-image: url("../../images/icons/twitter-hover.svg");
+}
+.footer__button:hover .icon_instagram {
+  background-image: url("../../images/icons/instagram-hover.svg");
+}
+.footer__button:hover .icon_facebook {
+  background-image: url("../../images/icons/facebook-hover.svg");
 }
 
 .footer__contact {
@@ -717,7 +793,9 @@ h1 {
 }
 
 .contact__item {
+  position: relative;
   margin-top: 24px;
+  width: fit-content;
   display: flex;
   align-items: center;
   letter-spacing: 0.1px;
@@ -725,6 +803,12 @@ h1 {
 .contact__item a {
   color: inherit;
   text-decoration: none;
+}
+.contact__item:after {
+  background: #e1d4c9;
+}
+.contact__item_not-interactive:hover::after {
+  content: none;
 }
 
 /*# sourceMappingURL=style.css.map */
