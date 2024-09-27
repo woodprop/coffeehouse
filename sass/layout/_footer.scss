@@ -7,11 +7,21 @@
     border-radius: 40px;
     background: $color-bg-container;
     display: flex;
+
+    @include media-tablet {
+      width: auto;
+      height: auto;
+      padding: 100px 60px 107px;
+      flex-direction: column;
+    }
   }
 }
 
 .footer__content {
   width: 50%;
+  @include media-tablet {
+    width: 100%;
+  }
 }
 
 .footer__title {
@@ -54,6 +64,10 @@
   margin-top: 32px;
   margin-left: 50px;
   color: $color-text-light;
+  @include media-tablet {
+    margin-left: 0;
+    margin-top: 101px;
+  }
 }
 
 .contact__title {

@@ -13,6 +13,12 @@
   align-content: space-between;
   justify-content: space-between;
   height: 1060px;
+
+  @include media-tablet {
+    height: auto;
+    align-content: center;
+    gap: 40px;
+  }
 }
 
 .about__img {
@@ -22,6 +28,14 @@
   width: 660px;
   border-radius: 20px;
   overflow: hidden;
+  @include media-tablet {
+    width: auto;
+    max-width: 100%;
+    display: none;
+    &:first-child, &:last-child {
+      display: flex;
+    }
+  }
 
   &_big {
     height: 590px;

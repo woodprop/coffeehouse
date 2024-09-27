@@ -5,15 +5,25 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
+    @include media-tablet {
+      flex-direction: column;
+    }
   }
 }
 
 .mobile-app__content {
   max-width: 630px;
+  @include media-tablet {
+    max-width: 100%;
+  }
 }
 
 .mobile-app__title {
   margin-top: 145px;
+  @include media-tablet {
+    margin-top: 0;
+  }
 }
 
 .mobile-app__text {
@@ -69,5 +79,11 @@
   }
   &_google {
     background: url("../images/icons/icon-google.svg") no-repeat;
+  }
+}
+
+.mobile-app__image {
+  @include media-tablet {
+    margin: 100px auto 0 auto;
   }
 }

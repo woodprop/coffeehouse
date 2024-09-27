@@ -9,6 +9,11 @@
   background: url("../images/promo.jpg") no-repeat;
   background-size: cover;
   background-position: bottom -31px left 0px;
+  @include media-tablet {
+    background-position: bottom 0 center;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .promo__content {

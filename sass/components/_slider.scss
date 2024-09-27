@@ -18,13 +18,22 @@
   background: url("../images/icons/arrow.png") center center no-repeat;
   cursor: pointer;
   transition: all 0.3s ease;
+  @include media-tablet {
+    top: -2px;
+  }
 
   &_left {
     left: 4px;
+    @include media-tablet {
+      left: 0;
+    }
   }
   &_right {
     right: 4px;
     transform: rotate(180deg);
+    @include media-tablet {
+      right: 0;
+    }
   }
 
   &:hover {
