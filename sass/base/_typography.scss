@@ -2,6 +2,10 @@
   @include font($size: 6rem);
   letter-spacing: 0.2rem;
   line-height: 125%;
+  @include media-mobile {
+    @include font($size: 3.2rem);
+    letter-spacing: 0.1rem;
+  }
 }
 
 .title__accent {

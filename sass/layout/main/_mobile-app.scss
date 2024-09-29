@@ -39,6 +39,10 @@
   align-items: flex-start;
   justify-content: flex-start;
   column-gap: 20px;
+  @include media-mobile {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .mobile-app__button {
@@ -85,5 +89,11 @@
 .mobile-app__image {
   @include media-tablet {
     margin: 100px auto 0 auto;
+  }
+  @include media-mobile {
+    margin-top: 40px;
+  }
+  & img {
+    max-width: 100%;
   }
 }

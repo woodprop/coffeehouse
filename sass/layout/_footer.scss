@@ -14,6 +14,10 @@
       padding: 100px 60px 107px;
       flex-direction: column;
     }
+    @include media-mobile {
+      margin-bottom: 16px;
+      padding: 60px 16px 67px;
+    }
   }
 }
 
@@ -26,6 +30,11 @@
 
 .footer__title {
   color: $color-text-light;
+  @include media-mobile {
+    & br {
+      display: none;
+    }
+  }
 }
 
 .footer__social {
@@ -67,6 +76,9 @@
   @include media-tablet {
     margin-left: 0;
     margin-top: 101px;
+  }
+  @include media-mobile {
+    margin-top: 40px;
   }
 }
 

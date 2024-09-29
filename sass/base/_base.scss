@@ -17,6 +17,10 @@ body {
   color: $color-text-dark;
 }
 
+body.body_modal-opened {
+  overflow: hidden;
+}
+
 h1 {
   margin: 0;
 }

@@ -6,6 +6,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include media-mobile {
+    justify-content: center;
+  }
 }
 
 .slider__button {
@@ -20,6 +23,9 @@
   transition: all 0.3s ease;
   @include media-tablet {
     top: -2px;
+  }
+  @include media-mobile {
+    display: none;
   }
 
   &_left {
@@ -63,13 +69,20 @@
 
 .slide {
   width: 480px;
+  max-width: 100%;
   text-align: center;
+
 }
 
 .slide__image {
   display: block;
   margin: 0 auto;
   height: 480px;
+  @include media-tablet {
+    height: auto;
+    max-width: 100%;
+  }
+
 }
 
 .slide__title {

@@ -4,4 +4,7 @@
   @include media-tablet {
     margin: 0 40px;
   }
+  @include media-mobile {
+    margin: 0 16px;
+  }
 }
